@@ -1,0 +1,486 @@
+
+
+
+
+
+/*********************home section **************************/
+
+
+
+:root{
+  --babyblue: #233249;
+  
+}
+
+.body{
+  font-family: Helvetica, sans-serif;
+}
+
+.video-background{
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  /* background-color: rgba(0, 0, 0, 0.5); */
+}
+.caption{
+  position: absolute;
+  top: 30% !important;
+  width: 100%;
+  color: white;
+
+}
+
+.caption h1{
+  font-size: 4.2rem;
+  font-weight: bold;
+text-transform: uppercase;
+  text-shadow: .1rem .1rem .5rem black;
+  padding-bottom: 1rem;
+}
+.caption h3{
+  font-size: 30px;
+  text-shadow: .1rem .1rem .5rem black;
+  padding-bottom: 2rem;
+font-weight: lighter;
+color: #d2d6e1;
+
+}
+.caption h1 span{
+  color: #b5d0b5;
+
+
+}
+.btn-lg {
+  border-width: medium;
+  border-radius: 20;
+  font-size: 1.1rem;
+  padding: .6rem 50px;
+}
+
+.btn-lg:hover{
+  background-color: var(--signyellow);
+}
+
+/* 
+events section */
+
+
+.blog-home2 {
+  font-family: "helvetica Neue", sans-serif;
+  color: #000000;
+  font-weight: 300;
+}
+
+.blog-home2 h1,
+.blog-home2 h2,
+.blog-home2 h3,
+.blog-home2 h4,
+.blog-home2 h5,
+.blog-home2 h6 {
+  color: #3e4555;
+}
+
+.blog-home2 .font-weight-medium {
+  font-weight: 500;
+  
+}
+
+.blog-home2 .bg-light {
+  background-color: #f4f8fa !important;
+}
+
+.blog-home2 .subtitle {
+  color: #8d97ad;
+  line-height: 24px;
+}
+
+.blog-home2 .text-themecolor {
+  color: var(--signyellow);
+}
+
+.blog-home2 h5 {
+  line-height: 22px;
+  font-size: 18px;
+}
+
+.blog-home2 a.link {
+  color: #3e4555;
+}
+
+.blog-home2 a.link:hover {
+  color: var(--signyellow);
+}
+
+.blog-home2 .on-hover {
+  -webkit-transition: 0.2s ease-in;
+  -o-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
+}
+
+.blog-home2 .on-hover:hover {
+  -webkit-transform: translateY(-10px);
+  -ms-transform: translateY(-10px);
+  transform: translateY(-10px);
+}
+
+.blog-home2 .date-pos {
+  right: 10px;
+  top: 10px;
+
+}
+
+.blog-home2 .date-pos span {
+  font-size: 30px;
+  line-height: 30px;
+  color: #000000;
+
+}
+.blog-home2 .bg-info-gradiant {
+    
+    background-color: var(--signyellow);
+}
+
+
+#portfolio{
+margin-top: 50px;
+
+}
+
+#map .nz{
+  min-height: 50vh;
+  background-color: white;
+}
+
+
+
+
+/**************************** footer css **************************/
+
+ .social {
+   padding-top: 40px;
+  text-align:center;
+  padding-bottom:25px;
+  align-items: center;
+  background-color: var(--babyblue);
+  color: white;
+}
+
+.social > a {
+  font-size:24px;
+  width:40px;
+  height:40px;
+  line-height:40px;
+  display:inline-block;
+  text-align:center;
+  border-radius:50%;
+  border:1px solid rgb(255, 255, 255);
+  margin:0 8px;
+  color:inherit;
+  opacity:0.75;
+}
+
+ .social > a:hover {
+  opacity:0.9;
+  color: var(--signyellow);
+}
+
+.text-center .p-3{
+  background-color: var(--babyblue);
+  color: white;
+  margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+/*============ BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============*/
+
+@media (max-width: 768px){
+
+  .caption{
+    text-align: center;
+  }
+  .caption h1{
+    font-size:2.5rem;
+ 
+
+ 
+
+    padding-bottom: .5rem;
+  }
+  .caption h3{
+    font-size: 1.1rem;
+    
+    padding-bottom: 1.2rem;
+  }
+  
+  .btn-lg {
+   
+    border-radius: 20;
+    font-size: 1rem;
+    padding: .5rem 1.3rem;
+  }
+}
+
+
+/********************************** video css ************************************/
+
+/*--- Bootstrap Mobile Gutter Fix --*/
+.row, .container-fluid {
+  margin-left: 0px!important;
+  margin-right: 0px!important;
+  }
+  
+  /*--- Fixed Video Background iOS/Mobile Style--*/
+  .video-wrap {
+    clip: rect(0, auto, auto, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  #video {
+    position: fixed;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    will-change: transform;
+    z-index: -1000;
+  }
+  video { 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+    background: url('') no-repeat;
+    background-size: cover;
+    transition: 1s opacity;
+  }
+
+  /******************* end of video ***********************************/
+
+  /*********************************  header images ****************************/
+
+.headerImage3 {
+  background: url("/assets/img/wellington.jpg") no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 80vh;
+  
+}
+
+
+.headerImage1 {
+  background: url("/assets/img/west-coast.jpeg") no-repeat bottom;
+  background-size: cover;
+  background-attachment: fixed;
+  
+  height: 80vh;
+  
+}
+.headerImage2 {
+  background: url("/assets/img/marlborough.jpeg") no-repeat bottom;
+  background-size: cover;
+  background-attachment: fixed;
+  
+  height: 80vh;
+  
+}
+
+.headerImage4 {
+  background: url("/assets/img/auckland.jpeg") no-repeat bottom;
+  background-size: cover;
+  background-attachment: fixed;
+  
+  height: 80vh;
+  
+}
+.headerImage5 {
+  background: url("/assets/img/otago.jpeg") no-repeat bottom;
+  background-size: cover;
+  background-attachment: fixed;
+  
+  height: 80vh;
+  
+}
+.headerImage6{
+  background: url("/assets/img/nz.jpeg") no-repeat bottom;
+  background-size: cover;
+  background-attachment: fixed;
+  
+  height: 80vh;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80vh;
+  background: rgba(0, 0, 0, .2);
+  margin-bottom: 70px;
+}
+.headerTitle {
+  position: absolute;
+  top: 38%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* font-size: 6vw; */
+  font-size: 5rem;
+  
+  color: white;
+  text-align: center;
+  width: 100%;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+/*************************lightbox css**********************/
+
+@media (max-width: 768px) {
+#portfolio .container-fluid .portfolio-box .portfolio-box-caption .project-category, #portfolio .container-sm .portfolio-box .portfolio-box-caption .project-category, #portfolio .container-md .portfolio-box .portfolio-box-caption .project-category, #portfolio .container-lg .portfolio-box .portfolio-box-caption .project-category, #portfolio .container-xl .portfolio-box .portfolio-box-caption .project-category, #portfolio .container-xxl .portfolio-box .portfolio-box-caption .project-category {
+  font-family: "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+  #portfolio .container-fluid .portfolio-box .portfolio-box-caption .project-name, #portfolio .container-sm .portfolio-box .portfolio-box-caption .project-name, #portfolio .container-md .portfolio-box .portfolio-box-caption .project-name, #portfolio .container-lg .portfolio-box .portfolio-box-caption .project-name, #portfolio .container-xl .portfolio-box .portfolio-box-caption .project-name, #portfolio .container-xxl .portfolio-box .portfolio-box-caption .project-name {
+    font-size: .6rem;
+}
+}
+
+/****************************back to top button css ***************************/
+.scroll {
+  color: #fff;
+  margin-top: 100px
+}
+
+#toTopBtn {
+  position: fixed;
+  bottom: 26px;
+  right: 39px;
+  z-index: 98;
+  padding: 21px;
+  background-color: var(--signyellow);
+  opacity: .8;
+}
+
+.js .cd-top--fade-out {
+    opacity: .5
+}
+
+.js .cd-top--is-visible {
+    visibility: visible;
+    opacity: 1
+}
+
+.js .cd-top {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .3s, visibility .3s, background-color .3s
+}
+
+.cd-top {
+    position: fixed;
+    bottom: 20px;
+    bottom: var(--cd-back-to-top-margin);
+    right: 20px;
+    right: var(--cd-back-to-top-margin);
+    display: inline-block;
+    height: 40px;
+    height: var(--cd-back-to-top-size);
+    width: 40px;
+    width: var(--cd-back-to-top-size);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .05) !important;
+    background: url(https://res.cloudinary.com/dxfq3iotg/image/upload/v1571057658/cd-top-arrow.svg) no-repeat center 50%;
+    background-color: var(--signyellow), .8;
+    background-color: hsla(var(--cd-color-3-h), var(--cd-color-3-s), var(--cd-color-3-l), 0.8)
+}
+
+
+
+/******************* end od scroll top ******************************************/
+
+#contact{
+  margin-top: 200px;
+}
+
+/* carosel */
+
+.d-block-height{
+  height:80vh;
+}
+
+/* map css */
+.map_div {
+  height: 98vh;
+  text-align: center;
+  padding: 100px;
+}
+
+.map {
+  max-width: 100%;
+}
+svg a {
+  stroke: #fff;
+
+}
+
+/* text for pop */
+
+.popText{
+  font-family: helvetica Neue, Roboto;
+  color: var(--signyellow);
+}
+
+.popP{
+  font-family: helvetica Neue, Roboto;
+  color: #8d97ad;
+
+
+}
+
+/************************* Error Message ***********************/
+
+.error_msg{
+
+color: red;
+
+
+}
